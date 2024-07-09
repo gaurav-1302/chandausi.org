@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+
+    <!-- Meta Tags -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Chandausi Pravasi - Nonprofit NGO for Girls" />
+    <meta name="keywords" content="charity,chandausi,nonprofit,orphan,Poor,funding,fundrising,ngo,children" />
+    <meta name="author" content="Atirun Techs" />
+
+    <!-- Page Title -->
+    <title>Chandausi Pravasi</title>
+
+    <!-- Favicon and Touch Icons -->
+    <link href="images/favicon.png" rel="shortcut icon" type="image/png">
+    <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="images/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+
+    <!-- Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/css-plugin-collections.css" rel="stylesheet" />
+    <!-- CSS | menuzord megamenu skins -->
+    <link id="menuzord-menu-skins" href="css/menuzord-skins/menuzord-rounded-boxed.css" rel="stylesheet" />
+    <!-- CSS | Main style file -->
+    <link href="css/style-main.css" rel="stylesheet" type="text/css">
+    <!-- CSS | Preloader Styles -->
+    <link href="css/preloader.css" rel="stylesheet" type="text/css">
+    <!-- CSS | Custom Margin Padding Collection -->
+    <link href="css/custom-bootstrap-margin-padding.css" rel="stylesheet" type="text/css">
+    <!-- CSS | Responsive media queries -->
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
+    <!-- CSS | Style css. This is the file where you can place your own custom css code. Just uncomment it and use it. -->
+    <!-- <link href="css/style.css" rel="stylesheet" type="text/css"> -->
+
+    <!-- Revolution Slider 5.x CSS settings -->
+    <link href="js/revolution-slider/css/settings.css" rel="stylesheet" type="text/css" />
+    <link href="js/revolution-slider/css/layers.css" rel="stylesheet" type="text/css" />
+    <link href="js/revolution-slider/css/navigation.css" rel="stylesheet" type="text/css" />
+
+    <!-- CSS | Theme Color -->
+    <link href="css/colors/theme-skin-orange.css" rel="stylesheet" type="text/css">
+
+    <!-- external javascripts -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- JS | jquery plugin collection for this theme -->
+    <script src="js/jquery-plugin-collection.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css"
+        integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css"
+        integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/regular.min.css"
+        integrity="sha512-rOTVxSYNb4+/vo9pLIcNAv9yQVpC8DNcFDWPoc+gTv9SLu5H8W0Dn7QA4ffLHKA0wysdo6C5iqc+2LEO1miAow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+    <!-- Revolution Slider 5.x SCRIPTS -->
+    <script src="js/revolution-slider/js/jquery.themepunch.tools.min.js"></script>
+    <script src="js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            function getYearsList() {
+                const currentYear = new Date().getFullYear();
+                const yearsArray = [];
+
+                for (let i = currentYear; i >= currentYear - 85; i--) {
+                    yearsArray.push(i);
+                }
+
+                document.getElementById('year_from').innerHTML = yearsArray.map(year =>
+                    `<option value="${year}">${year}</option>`
+                ).join('');
+
+                document.getElementById('year_to').innerHTML = yearsArray.map(year =>
+                    `<option value="${year}">${year}</option>`
+                ).join('');
+            }
+
+            getYearsList();
+        });
+
+    </script>
+</head>
+
+<body class="">
+    <div id="wrapper" class="clearfix">
+        <!-- preloader -->
+        <!-- <div id="preloader">
+            <div id="spinner">
+                <div class="preloader-dot-loading">
+                    <div class="cssload-loading"><i></i><i></i><i></i><i></i></div>
+                </div>
+            </div>
+            <div id="disable-preloader" class="btn btn-default btn-sm">Disable Preloader</div>
+        </div> -->
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header-nav">
+                <div class="header-nav-wrapper navbar-scrolltofixed bg-silver-light">
+                    <div class="container">
+                        <nav id="menuzord-right" class="menuzord default no-bg">
+                            <a class="menuzord-brand pull-left flip" href="./index.html"><img
+                                    src="images/chandausi_logo-bg.png" alt=""></a>
+                            <ul class="menuzord-menu">
+                                <li><a href="./index.html">Home</a>
+                                </li>
+                                <li class=""><a href="#">About</a>
+                                    <ul class="dropdown">
+                                        <li><a href="./team.html">Our Team</a></li>
+                                        <li><a href="./about.html">Chandausi Pravasi</a></li>
+                                        <li><a href="./aamodini.html">Aamodini</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="./gallery.html">Gallery</a>
+                                </li>
+                                <li>
+                                    <a href="./register.html" class="btn btn-theme-colored">Join Us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Start main-content -->
+        <div class="main-content">
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="heading-line-bottom mt-0 mb-30">
+                                <h3 class="heading-title">Join the Change!</h3>
+                            </div>
+                            <div class="icon-box mb-0 p-0">
+                                <p class="text-gray">Welcome to Chandausi Pravasi, where your membership paves the way
+                                    for
+                                    meaningful impact in Chandausi. By becoming a member, you align yourself with a
+                                    community of change-makers dedicated to transforming lives and uplifting our beloved
+                                    town. Fill out the form below, and let's embark on this journey together!</p>
+                            </div>
+                            <div class="icon-box mt-80 mb-0 p-0">
+                                <p class="text-gray">Every member is a catalyst for change. Your support enables us to
+                                    continue our mission and broaden our reach. Together, we can create a Chandausi that
+                                    thrives in unity and progress.
+
+                                    Thank you for choosing to become a member of Chandausi Samaj. Your commitment is the
+                                    driving
+                                    force behind the positive transformations we aspire to achieve.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <h3 class="bg-theme-colored p-15 pl-30 mb-0 text-white">Become a Member</h3>
+                            <form class="p-30 pb-15" name="volunteer_apply_form" id="volunteer_apply_form"
+                                action="./php/sendmail.php" method="post" enctype="multipart/form-data"
+                                data-bg-img="images/about/f1.jpg"
+                                style="background-repeat: no-repeat; background-size: cover;">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="first_name">First name <small>*</small></label>
+                                            <input id="first_name" name="first_name" type="text" placeholder="John"
+                                                required class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="last_name">Last name <small>*</small></label>
+                                            <input id="last_name" name="last_name" type="text" placeholder="Doe"
+                                                required class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="email">Email <small>*</small></label>
+                                            <input id="email" name="email" type="email" placeholder="johndoe@gmail.com"
+                                                required class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="phone">Phone <small>*</small></label>
+                                            <input id="phone" name="phone" type="tel" placeholder="+91 8057987992"
+                                                required class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label for="profession">Profession <small>*</small></label>
+                                            <input id="profession" name="profession" type="text" placeholder="Teacher"
+                                                required class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="city">Current city <small>*</small></label>
+                                            <input id="city" name="city" type="text" placeholder="New Delhi" required
+                                                class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="country">Country <small>*</small></label>
+                                            <input id="country" name="country" type="text" placeholder="India" required
+                                                class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <label for="city">Period Lived in Chandausi</label>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="country">From <small>*</small></label>
+                                            <select name="year_from" id="year_from" class="form-control required valid">
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="year_to">To <small>*</small></label>
+                                            <select name="year_to" id="year_to" class="form-control required valid">
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form_message">Message</label>
+                                    <textarea id="form_message" name="form_message" class="form-control" rows="3"
+                                        placeholder="Your message sent to the team"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden"
+                                        value="" />
+                                    <button type="submit"
+                                        class="btn btn-block btn-dark btn-theme-colored btn-sm mt-20 pt-10 pb-10"
+                                        data-loading-text="Please wait...">Submit</button>
+                                </div>
+                            </form>
+                            <script type="text/javascript">
+                                $("#volunteer_apply_form").validate({
+                                    submitHandler: function (form) {
+                                        var form_btn = $(form).find('button[type="submit"]');
+                                        var form_result_div = '#form-result';
+                                        $(form_result_div).remove();
+                                        form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
+                                        var form_btn_old_msg = form_btn.html();
+                                        form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
+                                        $(form).ajaxSubmit({
+                                            dataType: 'json',
+                                            success: function (data) {
+                                                if (data.result == 'success') { // Check for success response
+                                                    $(form).find('.form-control').val('');
+                                                    $(form_result_div).html('Form submitted successfully.').fadeIn('slow');
+                                                    setTimeout(function () { $(form_result_div).fadeOut('slow') }, 6000);
+                                                } else {
+                                                    $(form_result_div).html('Form submission failed.').fadeIn('slow');
+                                                }
+                                                form_btn.prop('disabled', false).html(form_btn_old_msg);
+                                            },
+                                            error: function () {
+                                                $(form_result_div).html('An error occurred while submitting the form.').fadeIn('slow');
+                                                form_btn.prop('disabled', false).html(form_btn_old_msg);
+                                            }
+                                        });
+                                    }
+                                });
+                            </script>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- end main-content -->
+
+        <!-- Footer -->
+        <footer id="footer" class="footer" data-bg-img="images/footer-bg.png" data-bg-color="#25272e">
+            <div class="container pt-70 pb-40">
+                <div class="row mt-5" style="margin-bottom: -50px;">
+                    <div class="col-md-8">
+                        <div class="widget dark">
+                            <ul class="list-inline mt-10">
+                                <li class="m-0">
+                                    <a class="text-gray" href="./terms.html">
+                                        Terms & Conditions
+                                    </a>
+                                </li>
+                                <li class="m-0 pl-10 pr-10">
+                                    <a class="text-gray" href="./privacy.html">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li class="m-0 pl-10 pr-10">
+                                    <a class="text-gray" href="./refund.html">
+                                        Refund Policy
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row border-bottom-black">
+                    <div class="col-sm-6 col-md-12">
+                        <div class="widget dark">
+                            <p>Chandausi Pravasi Trust, <br>
+                                PDM Building, Munsif Road, Chandausi - 244412 (District -
+                                Sambhal), <br>
+                                Uttar Pradesh, India
+                            </p>
+                            <ul class="list-inline mt-10">
+                                <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-colored mr-5"></i> <a
+                                        class="text-gray" href="#">+91 8057987992</a> </li>
+                                <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-theme-colored mr-5"></i> <a
+                                        class="text-gray" href="#">chdpravasi@gmail.com</a> </li>
+                                <li class="m-0 pl-10 pr-10"> <i class="fa fa-globe text-theme-colored mr-5"></i> <a
+                                        class="text-gray" href="#">chandausi.org</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-3">
+                        <div class="widget dark">
+                            <h5 class="widget-title mb-10">Connect With Us</h5>
+                            <ul class="styled-icons icon-dark icon-theme-colored icon-circled icon-sm">
+                                <li><a href="https://www.facebook.com/groups/chandausipravasi"
+                                        target="_blank"><i><ion-icon name="logo-facebook"></ion-icon></i></a></li>
+                                <li><a href="https://www.instagram.com/chandausipravasi" target="_blank"><i><ion-icon
+                                                name="logo-instagram"></ion-icon></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/chandausipravasi/"
+                                        target="_blank"><i><ion-icon name="logo-linkedin"></ion-icon></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom bg-black-333">
+                <div class="container pt-15 pb-10">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="font-11 text-black-777 m-0">Copyright &copy;2024 Chandausi Pravasi. All Rights
+                                Reserved
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+    </div>
+    <!-- end wrapper -->
+
+    <!-- Footer Scripts -->
+    <!-- JS | Custom script for all pages -->
+    <script>
+        document.getElementById("form_botcheck").addEventListener("submit", function (event) {
+            const honeypotField = document.getElementsByName("honeypot")[0];
+            if (honeypotField.value !== "") {
+                event.preventDefault(); // Prevent form submission
+                console.log("Possible bot attack detected.");
+            }
+        });
+    </script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>

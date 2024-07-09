@@ -1,0 +1,9 @@
+.view-all-startups{
+    background-color: var(--color-primary);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    align-self: center;
+    padding: 5px 10px;
+    font-size: 18px;
+}
