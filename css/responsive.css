@@ -50,7 +50,7 @@
   
     .team-row .col-sm-6 {
       flex: 0 0 48%;
-      max-width: 48%;
+      max-width: 100%;
       margin-bottom: 10px;
     }
   
